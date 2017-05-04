@@ -112,7 +112,7 @@
     "lbBEAddressPoolID": "[concat(variables('lbID'),'/backendAddressPools/',variables('lbBEAddressPool'))]",
     "lbWebProbeID": "[concat(variables('lbID'),'/probes/',variables('lbWebProbeName'))]",
     "networkApi": "2016-03-30",
-    "imageName": "myCustomImage"
+   
   },
   "resources": [
     {
@@ -213,8 +213,8 @@
       "location": "[resourceGroup().location]",
       "dependsOn": [
         "[concat('Microsoft.Network/loadBalancers/',variables('lbName'))]",
-        "[concat('Microsoft.Network/virtualNetworks/',variables('virtualNetworkName'))]",
-        "[concat('Microsoft.Compute/images/',variables('imageName'))]"
+        "[concat('Microsoft.Network/virtualNetworks/',variables('virtualNetworkName'))]"
+       
       ],
       "sku": {
         "name": "[parameters('vmSize')]",
