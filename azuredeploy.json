@@ -112,6 +112,7 @@
     "lbBEAddressPoolID": "[concat(variables('lbID'),'/backendAddressPools/',variables('lbBEAddressPool'))]",
     "lbWebProbeID": "[concat(variables('lbID'),'/probes/',variables('lbWebProbeName'))]",
     "networkApi": "2016-03-30",
+     "imageName": "myCustomImage"
    
   },
   "resources": [
